@@ -1,1 +1,5 @@
 include ':app'
+include ':SalesforceMobileSDK-Android:libs:SalesforceSDK'
+include ':SalesforceMobileSDK-Android:libs:SalesforceAnalytics'
+include ':SalesforceMobileSDK-Android:libs:SmartStore'
+include ':SalesforceMobileSDK-Android:libs:SmartSync'
