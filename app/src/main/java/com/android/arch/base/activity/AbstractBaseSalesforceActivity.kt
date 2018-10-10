@@ -8,7 +8,7 @@ import android.support.annotation.LayoutRes
 import com.android.arch.base.viewmodel.AbstractViewModel
 import javax.inject.Inject
 
-abstract class AbstractBaseActivity<VM : AbstractViewModel> : AbstractBaseDefaultActivity() {
+abstract class AbstractBaseSalesforceActivity<VM : AbstractViewModel> : AbstractBaseDefaultSalesforceActivity() {
 
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory

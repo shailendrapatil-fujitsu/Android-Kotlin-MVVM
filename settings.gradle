@@ -1,5 +1,6 @@
-include ':app'
-include ':SalesforceMobileSDK-Android:libs:SalesforceSDK'
-include ':SalesforceMobileSDK-Android:libs:SalesforceAnalytics'
-include ':SalesforceMobileSDK-Android:libs:SmartStore'
-include ':SalesforceMobileSDK-Android:libs:SmartSync'
+include ':app', ':libs:SalesforceSDK', ':libs:SalesforceAnalytics', ':libs:SmartStore', ':libs:SmartSync'
+
+project(':libs:SalesforceSDK').projectDir = new File('app/libs/SalesforceMobileSDK-Android/libs/SalesforceSDK')
+project(':libs:SalesforceAnalytics').projectDir = new File('app/libs/SalesforceMobileSDK-Android/libs/SalesforceAnalytics')
+project(':libs:SmartStore').projectDir = new File('app/libs/SalesforceMobileSDK-Android/libs/SmartStore')
+project(':libs:SmartSync').projectDir = new File('app/libs/SalesforceMobileSDK-Android/libs/SmartSync')
